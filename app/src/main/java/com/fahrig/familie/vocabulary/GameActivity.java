@@ -1,16 +1,15 @@
 package com.fahrig.familie.vocabulary;
 
-import android.app.*;
-import android.content.res.*; 
-import android.graphics.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
-
-import com.fahrig.familie.vocabulary.R;
-
-import java.util.*;
-import java.util.stream.*;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class GameActivity extends Activity 
 {

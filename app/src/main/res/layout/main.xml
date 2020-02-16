@@ -14,16 +14,16 @@
 	<View
 		android:layout_width="wrap_content"
 		android:layout_height="100dp" />
-
+		
 	<Button
-		android:text ="@string/latin5_lection2"
+		android:text ="@string/latin5_lection1"
 		android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 		android:onClick="startGame"
 		android:textAllCaps="false" />
-		
+
 	<Button
-		android:text ="@string/latin5_lection1"
+		android:text ="@string/latin5_lection2"
 		android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 		android:onClick="startGame"

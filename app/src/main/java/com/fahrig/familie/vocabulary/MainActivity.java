@@ -1,23 +1,21 @@
 package com.fahrig.familie.vocabulary;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.content.*;
-import android.widget.*;
-import android.database.*;
-import android.database.sqlite.*;
-
-import com.fahrig.familie.vocabulary.R;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity 
 {
 	public final long appStartDate = System.currentTimeMillis();
-	public final int LATIN5_LECTION2_RESULT = 0;
-	public final int LATIN5_LECTION1_RESULT = 1;
-	public final int LATIN5_LECTION3_RESULT = 3;
-	public final int LATIN5_LECTION4_RESULT = 4;
-	public final int ADDITION_RESULT = 2;
 	public final String STATISTICS_TABLE = "StatisticsTable";
 	public final String TIMESTAMP = "Timestamp";
 	public final String GAME_TYPE = "GameType";
@@ -65,49 +63,24 @@ public class MainActivity extends Activity
     }
     
     @Override
-    public void onActivityResult(int id, int value, Intent data) {
+    public void onActivityResult(int gameType, int value, Intent data) {
     	TextView result = (TextView)findViewById(R.id.result);
-		exec(insertIntoStatisticsTable(id, value));
-    	switch (id) {
-	    	case LATIN5_LECTION2_RESULT:
-				result.setText(getResources().getString(R.string.latin5_lection2) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
-			case LATIN5_LECTION1_RESULT:
-				result.setText(getResources().getString(R.string.latin5_lection1) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
-			case LATIN5_LECTION3_RESULT:
-				result.setText(getResources().getString(R.string.latin5_lection3) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
-			case LATIN5_LECTION4_RESULT:
-				result.setText(getResources().getString(R.string.latin5_lection4) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
-			case ADDITION_RESULT:
-				result.setText(getResources().getString(R.string.addition) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
-			default:
-	   }
+		exec(insertIntoStatisticsTable(gameType, value));
+		result.setText(GameTypes.getLabel(getResources(), gameType) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
     }
     
     public void startGame(View view){
-    	int gameResult = 0;
-    	if  (((Button)view).getText().equals(getResources().getString(R.string.latin5_lection2))) {
-	    	vocabulary = getResources().getStringArray(R.array.latin5_lection2);
-			gameResult = LATIN5_LECTION2_RESULT;
-    	} else if  (((Button)view).getText().equals(getResources().getString(R.string.latin5_lection1))) {
-	    	vocabulary = getResources().getStringArray(R.array.latin5_lection1);
-			gameResult = LATIN5_LECTION3_RESULT;
-    	} else if  (((Button)view).getText().equals(getResources().getString(R.string.latin5_lection3))) {
-	    	vocabulary = getResources().getStringArray(R.array.latin5_lection3);
-			gameResult = LATIN5_LECTION4_RESULT;
-    	} else if  (((Button)view).getText().equals(getResources().getString(R.string.latin5_lection4))) {
-	    	vocabulary = getResources().getStringArray(R.array.latin5_lection4);
-			gameResult = LATIN5_LECTION1_RESULT;
-    	} else if  (((Button)view).getText().equals(getResources().getString(R.string.addition))) {
-			gameResult = ADDITION_RESULT;
-    	}
-    	if (gameResult == LATIN5_LECTION1_RESULT || gameResult == LATIN5_LECTION2_RESULT || gameResult == LATIN5_LECTION3_RESULT || gameResult == LATIN5_LECTION4_RESULT){
-	    	Intent intent = new Intent(this, GameActivity.class)
-		    .putExtra("vocabulary", vocabulary);
-	        startActivityForResult(intent, gameResult); 
-    	} else {
-	    	Intent intent = new Intent(this, MathGameActivity.class);
-	        startActivityForResult(intent, gameResult);
-		}
+    	int gameResult = GameTypes.getId(getResources(), (String)((Button)view).getText());
+        vocabulary = GameTypes.getList(getResources(), (String)((Button)view).getText());
+
+        if (GameTypes.isMathGame(gameResult)) {
+            Intent intent = new Intent(this, MathGameActivity.class);
+            startActivityForResult(intent, gameResult);
+        } else {
+            Intent intent = new Intent(this, GameActivity.class)
+            .putExtra("vocabulary", vocabulary);
+            startActivityForResult(intent, gameResult);
+        }
     }
     
     public void statistics(){

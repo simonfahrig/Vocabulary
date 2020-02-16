@@ -1,27 +1,19 @@
 package com.fahrig.familie.vocabulary;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.content.*;
-import android.widget.*;
-import android.database.*;
-import android.database.sqlite.*;
-
-import com.fahrig.familie.vocabulary.R;
+import android.app.Activity;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Statistics extends Activity 
 {
-	//public final int LATIN5_LECTION2_RESULT = 0;
-	//public final int LATIN5_LECTION1_RESULT = 1;
-	//public final int LATIN5_LECTION3_RESULT = 3;
-	//public final int LATIN5_LECTION4_RESULT = 4;
-	//public final int ADDITION_RESULT = 2;
 	public final String STATISTICS_TABLE = "StatisticsTable";
 	public final String TIMESTAMP = "Timestamp";
 	public final String GAME_TYPE = "GameType";
 	public final String POINTS = "Points";
-	//public String[] vocabulary;
 	public SQLiteDatabase database;
 	
     @Override
@@ -46,9 +38,9 @@ public class Statistics extends Activity
     }
     
     public void loadStatistics(){
-    	StringBuffer tsbuffer = new StringBuffer(TIMESTAMP);
-    	StringBuffer gtbuffer = new StringBuffer(GAME_TYPE);
-    	StringBuffer ptbuffer = new StringBuffer(POINTS);
+    	StringBuffer timestampBuffer = new StringBuffer(TIMESTAMP);
+    	StringBuffer gametypeBuffer = new StringBuffer(GAME_TYPE);
+    	StringBuffer pointsBuffer = new StringBuffer(POINTS);
 		try {
 	    	Cursor cursor = database.query(
 				STATISTICS_TABLE, //tableName,
@@ -62,9 +54,9 @@ public class Statistics extends Activity
 		
 		cursor.moveToFirst();
 		while (!cursor.isAfterLast()) {
-			tsbuffer.append("\n" + cursor.getString(0));
-			gtbuffer.append("\n" + cursor.getInt(1));
-			ptbuffer.append("\n" + cursor.getInt(2));
+			timestampBuffer.append("\n" + cursor.getString(0));
+			gametypeBuffer.append("\n" + GameTypes.getLabel(getResources(), cursor.getInt(1)));
+			pointsBuffer.append("\n" + cursor.getInt(2));
 			cursor.moveToNext();
 		}
 		} catch  (Exception e) {
@@ -73,9 +65,9 @@ public class Statistics extends Activity
         TextView timestamp = (TextView)findViewById(R.id.timestamp); 
         TextView gameType = (TextView)findViewById(R.id.gametype); 
         TextView points = (TextView)findViewById(R.id.points);
-        timestamp.setText(tsbuffer.toString());
-        gameType.setText(gtbuffer.toString());
-        points.setText(ptbuffer.toString());
+        timestamp.setText(timestampBuffer.toString());
+        gameType.setText(gametypeBuffer.toString());
+        points.setText(pointsBuffer.toString());
 		
     }
 }
