@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vocabulary</string>
+    <string name="noResult">Kein letztes Spiel aufgezeichnet</string>
+    <string name="points">Punkte</string>
+    <string name="statistics">Statistik</string>
+    <string name="latin5_lection1">Lektion 1</string>
+    <string name="latin5_lection2">Lektion 2</string>
+    <string name="latin5_lection3">Lektion 3</string>
+    <string name="latin5_lection4">Lektion 4</string>
+    <string name="addition">Addition bis 1000</string>
+
+    <string-array name="addition">
+        <item>17 + 9;26</item>
+        <item>54 + 11;65</item>
+        <item>32 + 8;40</item>
+    </string-array>
+    
+    <string-array name="latin5_lection1">
+        <item>puella;Mädchen, Freundin</item>
+        <item>serva;Sklavin, Dienerin</item>
+        <item>silva;Wald</item>
+        <item>via;Weg, Straße</item>
+        <item>villa;Haus, Landhaus</item>
+        <item>avus;Großvater</item>
+        <item>campus;Feld, freier Platz</item>
+        <item>equus;Pferd</item>
+        <item>murus;Mauer</item>
+        <item>servus;Sklave</item>
+        <item>vicus;Dorf, Gasse</item>
+        <item>et;und</item>
+
+        <item>oculus;Auge</item>
+        <item>debere;müssen, sollen</item>
+        <item>dolere;schmerzen, wehtun</item>
+        <item>monere;mahnen, ermahnen</item>
+        <item>parere;gehorchen</item>
+        <item>ridere;lachen, auslachen</item>
+        <item>tacere;schweigen, verschweigen</item>
+        <item>timere;fürchten, Angst haben</item>
+        <item>esse;sein, sich befinden</item>
+        <item>est;er (sie, es) ist</item>
+        <item>sunt;sie sind</item>
+        <item>non;nicht</item>
+        <item>nunc;nun, jetzt</item>
+        <item>cur?;warum?</item>
+        <item>quid?;was?</item>
+
+        <item>lingua;Sprache, Rede</item>
+        <item>dominus;Herr</item>
+        <item>augere:vergrößern,vermehren</item>
+        <item>respondere;antworten</item>
+        <item>sedere;sitzen</item>
+        <item>terrere;erschrecken</item>
+        <item>hic;hier</item>
+        <item>ibi;dort</item>
+        <item>quis?;wie?</item>
+        <item>nam;denn, nämlich</item>
+        <item>sed;aber, sondern</item>
+        <item>neque;und nicht, auch nicht</item>
+        <item>neque ... neque;weder ... noch</item>
+    </string-array>
+    
+    <string-array name="latin5_lection2">
+        <item>tabula;(Schreib-)Tafel,Gemälde</item>
+        <item>amicus;Freund</item>
+        <item>docere, doceo;lehren, unterrichten</item>
+        <item>gaudere,gaudeo;sich freuen</item>
+        <item>preabere, preabeo;geben, hinhalten</item>
+        <item>studere, studeo;sich bemühen, studieren</item>
+        <item>tenere, teneo;halten, festhalten, besitzen</item>
+        <item>iam;schon, bereits, nun</item>
+        <item>non iam; nicht mehr</item>
+        <item>numquam;niemals</item>
+        <item>primo;zuerst</item>
+        <item>recte;richtig;zu Recht</item>
+        <item>saepe;oft</item>
+        <item>tum;da, dann, darauf, damals</item>
+
+        <item>gladius;Schwert</item>
+        <item>sceleratus;Verbrecher</item>
+        <item>sonus;Ton, Klang, Geräusch</item>
+        <item>flere, fleo;weinen, beweinen</item>
+        <item>latere, lateo;verborgen sein</item>
+        <item>placere, placeo;gefallen</item>
+        <item>torquere,torqueo;drehen, quälen</item>
+        <item>iterum;wiederum, zum zweiten Mal</item>
+        <item>statim;sofort</item>
+        <item>subito;plötzlich</item>
+        <item>tantum (nachgestellt);nur</item>
+        <item>cui?;wem?</item>
+        <item>etiam;auch, sogar</item>
+        <item>itaque;deshalb</item>
+
+        <item>aqua;Wasser</item>
+        <item>copia;Menge, Vorrat</item>
+        <item>grata;Dank</item>
+        <item>cibus;Nahrung, Speise, Futter</item>
+        <item>deus;Gott, Gottheit</item>
+        <item>populus;Volk</item>
+        <item>ventus;Wind</item>
+        <item>complere, compleo;anfüllen, auffüllen</item>
+        <item>delere, deleo;zerstören, vernichten</item>
+        <item>habere, habeo;haben, halten</item>
+        <item>adhuc;bis jetzt, noch</item>
+        <item>profecto;sicherlich, tatsächlich</item>
+        <item>semper;immer</item>
+        <item>gratiam habere;danken</item>
+        <item>Aeolus;Äolus (Herr über die Winde)</item>
+    </string-array>
+    
+    <string-array name="latin5_lection3">
+        <item>amica;Freundin</item>
+        <item>insula;Insel, Wohnblock</item>
+        <item>lacrima;Träne</item>
+        <item>laetitia;Freude</item>
+        <item>turba;(Menschen-)Menge</item>
+        <item>movere, moveo;bewegen,beeindrucken</item>
+        <item>patere, pateo;offenstehen</item>
+        <item>valere, valeo;gesund sein, stark sein, Einfluss haben</item>
+        <item>videre, video;sehen</item>
+        <item>mox;bald</item>
+        <item>tandem;endlich</item>
+        <item>salve! salvete!;Sei gegrüßt! Seid gegrüßt!</item>
+        <item>vale! valete!;Leb wohl! Lebt wohl!</item>
+        <item>Roma;Rom</item>
+
+        <item>cena;Mahlzeit, Essen</item>
+        <item>domina;Herrin, Dame</item>
+        <item>filia;Tochter</item>
+        <item>mensa;(Ess-)Tisch</item>
+        <item>amare, amo;lieben</item>
+        <item>delectare, delecto;erfreuen, unterhalten</item>
+        <item>intrare, intro;betreten, eintreten</item>
+        <item>laborare, laboro; arbeiten, sich anstrengen</item>
+        <item>ornare,orno;ausstatten, schmücken</item>
+        <item>parare, paro;(vor)bereiten, vorhaben, erwerben</item>
+        <item>properare,propreo;eilen, sich beeilen</item>
+        <item>rogare, rogo;bitten, fragen</item>
+        <item>vocare, voco;nennen, benennen, rufen</item>
+        <item>sic;so</item>
+
+        <item>familia;Familie</item>
+        <item>iniuria;Unrecht, Beleidigung</item>
+        <item>patria;Heimat</item>
+        <item>provincia;Provinz</item>
+        <item>pugna;Kampf</item>
+        <item>barbarus;Barbar</item>
+        <item>captivus;Kriegsgefangener</item>
+        <item>dolus;List, Täuschung</item>
+        <item>filius;Sohn</item>
+        <item>cenare, ceno;essen</item>
+        <item>dubitare, dubito;zweifeln, zögern</item>
+        <item>pugnare, pugno;kämpfen</item>
+        <item>spectare, specto;betrachten, anschauen, hinsehen</item>
+        <item>superare, supero;besiegen, überwinden, übertreffen</item>
+        <item>bene;gut</item>
+        <item>diu;lange (Zeit)</item>
+        <item>unde?;woher?</item>
+        <item>Africa;Afrika</item>
+        <item>Asia;Asien</item>
+        <item>Europa;Europa</item>
+        <item>Romanus;Römer, Einwohner Roms</item>
+        <item>Syria;Syrien</item>
+    </string-array>
+    
+    <string-array name="latin5_lection4">
+        <item>ludus;Spiel, Schule</item>
+        <item>nihil;nichts</item>
+        <item>desiderare, desidero;sich sehnen nach, vermissen</item>
+        <item>exspectare, expecto;warten (auf), erwarten</item>
+        <item>habitare, habito;wohnen,bewohnen</item>
+        <item>salutare, saluto;(be)grüßen</item>
+        <item>audire, audio;hören</item>
+        <item>nescire, nescio;nicht wissen, nicht kennen, nicht verstehen</item>
+        <item>scire, scio;wissen, kennen, verstehen</item>
+        <item>venire, venio;kommen</item>
+        <item>ubi?;wo?</item>
+        <item>Aetna;Ätna (Vulkan auf Sizilien)</item>
+        <item>Creta;Kreta (Insel in Mittelmeer)</item>
+        <item>Sicilia;Sizilien (Insel in Mittelmeer)</item>
+        <item>Vulcanus;Vulkan(us) (Gott des Feuers)</item>
+
+        <item>curia;Kurie (Sitzungsgebäude des Senats)</item>
+        <item>dea;Göttin</item>
+        <item>porta;Tor</item>
+        <item>discipulus;Schüler</item>
+        <item>aedificium;Gebäude</item>
+        <item>beneficium;Wohltat</item>
+        <item>consilium;Beratung, Beschluss, Plan, Rat</item>
+        <item>donum;Geschenk</item>
+        <item>forum;Forum, Marktplatz</item>
+        <item>frumentum;Getreide</item>
+        <item>ingenium;Begabung, Talent</item>
+        <item>templum;Tempel</item>
+        <item>verbum;Wort, Äußerung</item>
+        <item>aedificare, aedifico;bauen</item>
+        <item>libenter;gerne</item>
+        <item>Concordia;Concordia (Göttin der Eintracht)</item>
+        <item>Saturnus;Saturn (Gott der Saat und der Zeit)</item>
+
+        <item>basilica;Markthalle,Gerichtshalle</item>
+        <item>umbra;Schatten</item>
+        <item>ornamentum;Schmuch(stück)</item>
+        <item>pretium;Preis, Wert</item>
+        <item>indicare, indico;anzeigen, melden</item>
+        <item>probare, probo; prüfen, beweisen, für gut befinden</item>
+        <item>manere, maneo;bleiben, (er)warten</item>
+        <item>ad (m. Akk.);zu, bei, nach, an</item>
+        <item>ante (m. Akk.);vor</item>
+        <item>in (m. Akk.);in (... hinein), nach (wohin?)</item>
+        <item>post (m. Akk.);hinter, nach</item>
+        <item>cum (m. Abl.);mit, zusammen mit</item>
+        <item>e/ex (m. Abl.);aus, von ... her</item>
+        <item>in (m. Abl.);in, an, auf, bei (wo?)</item>
+        <item>sine (m. Abl.);ohne</item>
+    </string-array>
+</resources>

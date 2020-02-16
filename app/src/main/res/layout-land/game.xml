@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+	<ProgressBar
+		android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+		android:progressBackgroundTint="#dddddd"
+		android:progressTint="#499100"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="15dp" 
+        android:layout_marginLeft="15dp" />
+
+	<TextView
+		android:id="@+id/points"
+        android:text="@string/points"
+		android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="10dp" />
+		
+	<TextView
+		android:id="@+id/question"
+		android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="10dp" />
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+	<Button
+		android:id="@+id/answer1"
+		android:textSize="20dp"
+		android:padding="30dp"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="onAnswer"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:id="@+id/answer2"
+		android:textSize="20dp"
+		android:padding="30dp"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="onAnswer"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:id="@+id/answer3"
+		android:textSize="20dp"
+		android:padding="30dp"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="onAnswer"
+		android:textAllCaps="false" />
+
+</LinearLayout>
+</LinearLayout>

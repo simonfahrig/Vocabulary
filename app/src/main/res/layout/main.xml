@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    	
+	<TextView
+		android:id="@+id/result"
+        android:text="@string/noResult"
+		android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="100dp" />
+
+	<Button
+		android:text ="@string/latin5_lection2"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="startGame"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:text ="@string/latin5_lection1"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="startGame"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:text ="@string/latin5_lection3"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="startGame"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:text ="@string/latin5_lection4"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="startGame"
+		android:textAllCaps="false" />
+		
+	<Button
+		android:text ="@string/addition"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:onClick="startGame"
+		android:textAllCaps="false" />
+
+</LinearLayout>
