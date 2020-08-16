@@ -167,7 +167,7 @@ public class GameActivity extends Activity
     
     public void addPoint(int increment) {
     	points += increment;;
-    	setResult(RESULT_FIRST_USER + points);
+    	setResult(points);
 		TextView results = (TextView)findViewById(R.id.points);
 		results.setText("" + points + " " + getResources().getString(R.string.points));
     }

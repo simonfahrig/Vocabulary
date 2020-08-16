@@ -66,7 +66,7 @@ public class MainActivity extends Activity
     public void onActivityResult(int gameType, int value, Intent data) {
     	TextView result = (TextView)findViewById(R.id.result);
 		exec(insertIntoStatisticsTable(gameType, value));
-		result.setText(GameTypes.getLabel(getResources(), gameType) + ": " + (value - RESULT_FIRST_USER) + " Punkte");
+		result.setText(GameTypes.getLabel(getResources(), gameType) + ": " + value + " Punkte");
     }
     
     public void startGame(View view){
