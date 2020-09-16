@@ -14,40 +14,26 @@
 	<View
 		android:layout_width="wrap_content"
 		android:layout_height="100dp" />
-		
+
 	<Button
-		android:text ="@string/latin5_lection1"
 		android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+		android:layout_height="wrap_content"
 		android:onClick="startGame"
+		android:text="@string/settings"
 		android:textAllCaps="false" />
 
 	<Button
-		android:text ="@string/latin5_lection2"
 		android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+		android:layout_height="wrap_content"
 		android:onClick="startGame"
+		android:text="@string/statistics"
 		android:textAllCaps="false" />
-		
+
 	<Button
-		android:text ="@string/latin5_lection3"
 		android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+		android:layout_height="wrap_content"
 		android:onClick="startGame"
-		android:textAllCaps="false" />
-		
-	<Button
-		android:text ="@string/latin5_lection4"
-		android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-		android:onClick="startGame"
-		android:textAllCaps="false" />
-		
-	<Button
-		android:text ="@string/addition"
-		android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-		android:onClick="startGame"
+		android:text="@string/startGame"
 		android:textAllCaps="false" />
 
 </LinearLayout>

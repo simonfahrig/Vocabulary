@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="switch_lection_1"
+        app:title="Lektion 1" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_2"
+        app:title="Lektion 2" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_3"
+        app:title="Lektion 3" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_4"
+        app:title="Lektion 4" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_5"
+        app:title="Lektion 5" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_6"
+        app:title="Lektion 6" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_7"
+        app:title="Lektion 7" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_8"
+        app:title="Lektion 8" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_9"
+        app:title="Lektion 9" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_10"
+        app:title="Lektion 10" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_11"
+        app:title="Lektion 11" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_12"
+        app:title="Lektion 12" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_113"
+        app:title="Lektion 13" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_14"
+        app:title="Lektion 14" />
+
+</PreferenceScreen>

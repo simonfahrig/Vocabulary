@@ -3,6 +3,7 @@ package com.fahrig.familie.vocabulary;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import androidx.preference.PreferenceManager;
 
 public class MainActivity extends Activity 
 {
@@ -44,9 +51,12 @@ public class MainActivity extends Activity
     // Handle item selection
         //Toast.makeText(this, item.getTitle (), Toast.LENGTH_SHORT).show();
 	    switch (item.getItemId()) {
-	        case R.id.statistics:
-	            statistics();
-	            return true;
+            case R.id.statistics:
+                statistics();
+                return true;
+            case R.id.settings_container:
+                settings();
+                return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 		}
@@ -70,8 +80,35 @@ public class MainActivity extends Activity
     }
     
     public void startGame(View view){
-    	int gameResult = GameTypes.getId(getResources(), (String)((Button)view).getText());
-        vocabulary = GameTypes.getList(getResources(), (String)((Button)view).getText());
+        SharedPreferences sharedPreferences =
+                PreferenceManager.getDefaultSharedPreferences(this /* Activity context */);
+        Boolean lection1 = sharedPreferences.getBoolean("switch_lection_1", false);
+        Boolean lection2 = sharedPreferences.getBoolean("switch_lection_2", false);
+        Boolean lection3 = sharedPreferences.getBoolean("switch_lection_3", false);
+        Boolean lection4 = sharedPreferences.getBoolean("switch_lection_4", false);
+        Boolean lection5 = sharedPreferences.getBoolean("switch_lection_5", false);
+        Boolean lection6 = sharedPreferences.getBoolean("switch_lection_6", false);
+    	int gameResult = GameTypes.getId(getResources(), "Lektion 1");
+    	List<String> vocs = new ArrayList<String>();
+        if (lection1) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 1"));
+        }
+        if (lection2) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 2"));
+        }
+        if (lection3) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 3"));
+        }
+        if (lection4) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 4"));
+        }
+        if (lection5) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 5"));
+        }
+        if (lection6) {
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 6"));
+        }
+        vocabulary = vocs.toArray(new String[vocs.size()]);
 
         if (GameTypes.isMathGame(gameResult)) {
             Intent intent = new Intent(this, MathGameActivity.class);
@@ -82,11 +119,17 @@ public class MainActivity extends Activity
             startActivityForResult(intent, gameResult);
         }
     }
-    
+
     public void statistics(){
-    	Intent intent = new Intent(this, Statistics.class)
-	    .putExtra("appStartDate", appStartDate);
-        startActivity(intent); 
+        Intent intent = new Intent(this, Statistics.class)
+                .putExtra("appStartDate", appStartDate);
+        startActivity(intent);
+    }
+
+    public void settings(){
+        Intent intent = new Intent(this, MySettingsActivity.class)
+                .putExtra("appStartDate", appStartDate);
+        startActivity(intent);
     }
     
     public String createStatisticsTable(){
