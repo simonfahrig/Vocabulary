@@ -82,33 +82,105 @@ public class MainActivity extends Activity
     public void startGame(View view){
         SharedPreferences sharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(this /* Activity context */);
-        Boolean lection1 = sharedPreferences.getBoolean("switch_lection_1", false);
-        Boolean lection2 = sharedPreferences.getBoolean("switch_lection_2", false);
-        Boolean lection3 = sharedPreferences.getBoolean("switch_lection_3", false);
-        Boolean lection4 = sharedPreferences.getBoolean("switch_lection_4", false);
-        Boolean lection5 = sharedPreferences.getBoolean("switch_lection_5", false);
-        Boolean lection6 = sharedPreferences.getBoolean("switch_lection_6", false);
+        Boolean lection1_1 = sharedPreferences.getBoolean("switch_lection_1_1", false);
+        Boolean lection1_2 = sharedPreferences.getBoolean("switch_lection_1_2", false);
+        Boolean lection1_3 = sharedPreferences.getBoolean("switch_lection_1_3", false);
+        Boolean lection2_1 = sharedPreferences.getBoolean("switch_lection_2_1", false);
+        Boolean lection2_2 = sharedPreferences.getBoolean("switch_lection_2_2", false);
+        Boolean lection2_3 = sharedPreferences.getBoolean("switch_lection_2_3", false);
+        Boolean lection3_1 = sharedPreferences.getBoolean("switch_lection_3_1", false);
+        Boolean lection3_2 = sharedPreferences.getBoolean("switch_lection_3_2", false);
+        Boolean lection3_3 = sharedPreferences.getBoolean("switch_lection_3_3", false);
+        Boolean lection4_1 = sharedPreferences.getBoolean("switch_lection_4_1", false);
+        Boolean lection4_2 = sharedPreferences.getBoolean("switch_lection_4_2", false);
+        Boolean lection4_3 = sharedPreferences.getBoolean("switch_lection_4_3", false);
+        Boolean lection5_1 = sharedPreferences.getBoolean("switch_lection_5_1", false);
+        Boolean lection5_2 = sharedPreferences.getBoolean("switch_lection_5_2", false);
+        Boolean lection5_3 = sharedPreferences.getBoolean("switch_lection_5_3", false);
+        Boolean lection6_1 = sharedPreferences.getBoolean("switch_lection_6_1", false);
+        Boolean lection6_2 = sharedPreferences.getBoolean("switch_lection_6_2", false);
+        Boolean lection6_3 = sharedPreferences.getBoolean("switch_lection_6_3", false);
+        Boolean lection7_1 = sharedPreferences.getBoolean("switch_lection_7_1", false);
+        Boolean lection7_2 = sharedPreferences.getBoolean("switch_lection_7_2", false);
+        Boolean lection7_3 = sharedPreferences.getBoolean("switch_lection_7_3", false);
+        Boolean lection8_1 = sharedPreferences.getBoolean("switch_lection_8_1", false);
+        Boolean lection8_2 = sharedPreferences.getBoolean("switch_lection_8_2", false);
+        Boolean lection8_3 = sharedPreferences.getBoolean("switch_lection_8_3", false);
     	int gameResult = GameTypes.getId(getResources(), "Lektion 1");
     	List<String> vocs = new ArrayList<String>();
-        if (lection1) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 1"));
+        if (lection1_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 1.1"));
         }
-        if (lection2) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 2"));
+        if (lection1_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 1.2"));
         }
-        if (lection3) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 3"));
+        if (lection1_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 1.3"));
         }
-        if (lection4) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 4"));
+        if (lection2_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 2.1"));
         }
-        if (lection5) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 5"));
+        if (lection2_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 2.2"));
         }
-        if (lection6) {
-            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 6"));
+        if (lection2_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 2.3"));
         }
-        vocabulary = vocs.toArray(new String[vocs.size()]);
+        if (lection3_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 3.1"));
+        }
+        if (lection3_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 3.2"));
+        }
+        if (lection3_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 3.3"));
+        }
+        if (lection4_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 4.1"));
+        }
+        if (lection4_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 4.2"));
+        }
+        if (lection4_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 4.3"));
+        }
+        if (lection5_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 5.1"));
+        }
+        if (lection5_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 5.2"));
+        }
+        if (lection5_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 5.3"));
+        }
+        if (lection6_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 6.1"));
+        }
+        if (lection6_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 6.2"));
+        }
+        if (lection6_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 6.3"));
+        }
+        if (lection7_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 7.1"));
+        }
+        if (lection7_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 7.2"));
+        }
+        if (lection7_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 7.3"));
+        }
+        if (lection8_1){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 8.1"));
+        }
+        if (lection8_2){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 8.2"));
+        }
+        if (lection8_3){
+            Collections.addAll(vocs, GameTypes.getList(getResources(), "Lektion 8.3"));
+        }
+                vocabulary = vocs.toArray(new String[vocs.size()]);
 
         if (GameTypes.isMathGame(gameResult)) {
             Intent intent = new Intent(this, MathGameActivity.class);

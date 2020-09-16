@@ -3,72 +3,122 @@
 
     <SwitchPreferenceCompat
         app:defaultValue="true"
-        app:key="switch_lection_1"
-        app:title="Lektion 1" />
+        app:key="switch_lection_1_1"
+        app:title="Lektion 1_1" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="switch_lection_1_2"
+        app:title="Lektion 1_2" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="switch_lection_1_3"
+        app:title="Lektion 1_3" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_2"
-        app:title="Lektion 2" />
+        app:key="switch_lection_2_1"
+        app:title="Lektion 2_1" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_3"
-        app:title="Lektion 3" />
+        app:key="switch_lection_2_2"
+        app:title="Lektion 2_2" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_4"
-        app:title="Lektion 4" />
+        app:key="switch_lection_2_3"
+        app:title="Lektion 2_3" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_5"
-        app:title="Lektion 5" />
+        app:key="switch_lection_3_1"
+        app:title="Lektion 3_1" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_6"
-        app:title="Lektion 6" />
+        app:key="switch_lection_3_2"
+        app:title="Lektion 3_2" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_7"
-        app:title="Lektion 7" />
+        app:key="switch_lection_3_3"
+        app:title="Lektion 3_3" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_8"
-        app:title="Lektion 8" />
+        app:key="switch_lection_4_1"
+        app:title="Lektion 4_1" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_9"
-        app:title="Lektion 9" />
+        app:key="switch_lection_4_2"
+        app:title="Lektion 4_2" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_10"
-        app:title="Lektion 10" />
+        app:key="switch_lection_4_3"
+        app:title="Lektion 4_3" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_11"
-        app:title="Lektion 11" />
+        app:key="switch_lection_5_1"
+        app:title="Lektion 5_1" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_12"
-        app:title="Lektion 12" />
+        app:key="switch_lection_5_2"
+        app:title="Lektion 5_2" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_113"
-        app:title="Lektion 13" />
+        app:key="switch_lection_5_3"
+        app:title="Lektion 5_3" />
 
     <SwitchPreferenceCompat
         app:defaultValue="false"
-        app:key="switch_lection_14"
-        app:title="Lektion 14" />
+        app:key="switch_lection_6_1"
+        app:title="Lektion 6_1" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_6_2"
+        app:title="Lektion 6_2" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_6_3"
+        app:title="Lektion 6_3" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_7_1"
+        app:title="Lektion 7_1" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_7_2"
+        app:title="Lektion 7_2" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_7_3"
+        app:title="Lektion 7_3" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_8_1"
+        app:title="Lektion 8_1" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_8_2"
+        app:title="Lektion 8_2" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="switch_lection_8_3"
+        app:title="Lektion 8_3" />
 
 </PreferenceScreen>

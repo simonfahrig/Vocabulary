@@ -17,13 +17,13 @@ public class GameTypes {
 			case ADDITION_RESULT:
 				return resources.getString(R.string.addition);
 			case LATIN5_LECTION1_RESULT:
-                return resources.getString(R.string.latin5_lection1);
+                return resources.getString(R.string.latin5_lection1_1);
 	    	case LATIN5_LECTION2_RESULT:
-                return resources.getString(R.string.latin5_lection2);
+                return resources.getString(R.string.latin5_lection2_1);
 			case LATIN5_LECTION3_RESULT:
-                return resources.getString(R.string.latin5_lection3);
+                return resources.getString(R.string.latin5_lection3_1);
 			case LATIN5_LECTION4_RESULT:
-                return resources.getString(R.string.latin5_lection4);
+                return resources.getString(R.string.latin5_lection4_1);
 			default:
 			    return "";
         }
@@ -32,13 +32,13 @@ public class GameTypes {
     public static int getId(Resources resources, String label){
         if (label.equals(resources.getString(R.string.addition))){
             return ADDITION_RESULT;
-        } else if (label.equals(resources.getString(R.string.latin5_lection1))){
+        } else if (label.equals(resources.getString(R.string.latin5_lection1_1))){
             return LATIN5_LECTION1_RESULT;
-        } else if (label.equals(resources.getString(R.string.latin5_lection2))){
+        } else if (label.equals(resources.getString(R.string.latin5_lection2_1))){
             return LATIN5_LECTION2_RESULT;
-        } else if (label.equals(resources.getString(R.string.latin5_lection3))){
+        } else if (label.equals(resources.getString(R.string.latin5_lection3_1))){
             return LATIN5_LECTION3_RESULT;
-        } else if (label.equals(resources.getString(R.string.latin5_lection4))){
+        } else if (label.equals(resources.getString(R.string.latin5_lection4_1))){
             return LATIN5_LECTION4_RESULT;
         } else {
             return -1;
@@ -50,13 +50,13 @@ public class GameTypes {
             case ADDITION_RESULT:
                 return resources.getStringArray(R.array.addition);
             case LATIN5_LECTION1_RESULT:
-                return resources.getStringArray(R.array.latin5_lection1);
+                return resources.getStringArray(R.array.latin5_lection1_1);
             case LATIN5_LECTION2_RESULT:
-                return resources.getStringArray(R.array.latin5_lection2);
+                return resources.getStringArray(R.array.latin5_lection2_1);
             case LATIN5_LECTION3_RESULT:
-                return resources.getStringArray(R.array.latin5_lection3);
+                return resources.getStringArray(R.array.latin5_lection3_1);
             case LATIN5_LECTION4_RESULT:
-                return resources.getStringArray(R.array.latin5_lection4);
+                return resources.getStringArray(R.array.latin5_lection4_1);
             default:
                 return new String[]{};
         }
@@ -65,14 +65,14 @@ public class GameTypes {
     public static String[] getList(Resources resources, String label){
         if (label.equals(resources.getString(R.string.addition))){
             return resources.getStringArray(R.array.addition);
-        } else if (label.equals(resources.getString(R.string.latin5_lection1))){
-            return resources.getStringArray(R.array.latin5_lection1);
-        } else if (label.equals(resources.getString(R.string.latin5_lection2))){
-            return resources.getStringArray(R.array.latin5_lection2);
-        } else if (label.equals(resources.getString(R.string.latin5_lection3))){
-            return resources.getStringArray(R.array.latin5_lection3);
-        } else if (label.equals(resources.getString(R.string.latin5_lection4))){
-            return resources.getStringArray(R.array.latin5_lection4);
+        } else if (label.equals(resources.getString(R.string.latin5_lection1_1))){
+            return resources.getStringArray(R.array.latin5_lection1_1);
+        } else if (label.equals(resources.getString(R.string.latin5_lection2_1))){
+            return resources.getStringArray(R.array.latin5_lection2_1);
+        } else if (label.equals(resources.getString(R.string.latin5_lection3_1))){
+            return resources.getStringArray(R.array.latin5_lection3_1);
+        } else if (label.equals(resources.getString(R.string.latin5_lection4_1))){
+            return resources.getStringArray(R.array.latin5_lection4_1);
         } else {
             return new String[]{};
         }
